@@ -13,7 +13,7 @@ def computer_turn(sticks_left):
     if sticks_left>=4 and sticks_left%4!=0:
         comp_take=sticks_left%4
     else:
-        comp_take=random.radint(1, min(3, sticks_left))
+        comp_take=random.randint(1, min(3, sticks_left))
         print(f"Компьютер берет {comp_take} спичек")
     return comp_take
             
